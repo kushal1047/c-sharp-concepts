@@ -290,6 +290,6 @@ for (int userGuess = 0; userGuess != secretNumber;)
 }
 */
 
-Console.ReadKey();
+Console.ReadLine();
 
 
