@@ -309,7 +309,7 @@ do
 } while (studentScore != -1);
 int average = (sum + 1) / (counter-1);
 Console.WriteLine("The average is "+ average);
-*/
+
 // uses of break and continue in loops
 for (int i=0; i<6; i++)
 {
@@ -323,7 +323,17 @@ for (int i=0; i<6; i++)
     Console.WriteLine(i);
 }
 Console.WriteLine("loop has ended at 5th iteration.");
+*/
+// intro to arrays
+int[] numberArray = new int[5];
+numberArray[0] = 7;
+numberArray[1] = 8;
+numberArray[2] = 9;
+numberArray[3] = 10;
+numberArray[4] = 11;
 
+// array position(index): 0 1 2 3  4
+// values assigned:       7 8 9 10 11
 
 
 
