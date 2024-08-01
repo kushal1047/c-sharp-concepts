@@ -288,13 +288,13 @@ for (int userGuess = 0; userGuess != secretNumber;)
     else if (userGuess < secretNumber) { Console.WriteLine("Try higher."); }
     else { Console.WriteLine("Congratulations! You have guessed the right number!, You took {0} tries.", counter); }
 }
-*/
-//int number;
-//do
-//{
-//    Console.WriteLine("Enter a positive whole number");
-//    number = int.Parse(Console.ReadLine());
-//} while (number <= 0);
+
+int number;
+do
+{
+    Console.WriteLine("Enter a positive whole number");
+    number = int.Parse(Console.ReadLine());
+} while (number <= 0);
 
 int studentScore;
 int counter=0;
@@ -309,6 +309,22 @@ do
 } while (studentScore != -1);
 int average = (sum + 1) / (counter-1);
 Console.WriteLine("The average is "+ average);
+*/
+// uses of break and continue in loops
+for (int i=0; i<6; i++)
+{
+    if (i == 3)
+    {
+        continue; // this skips the current iteration which is when i is 3.
+    }
+    if (i == 5) {
+        break; // this stops the loop once and for all.
+    }
+    Console.WriteLine(i);
+}
+Console.WriteLine("loop has ended at 5th iteration.");
+
+
 
 
 Console.ReadLine();
