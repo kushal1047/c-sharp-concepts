@@ -289,6 +289,27 @@ for (int userGuess = 0; userGuess != secretNumber;)
     else { Console.WriteLine("Congratulations! You have guessed the right number!, You took {0} tries.", counter); }
 }
 */
+//int number;
+//do
+//{
+//    Console.WriteLine("Enter a positive whole number");
+//    number = int.Parse(Console.ReadLine());
+//} while (number <= 0);
+
+int studentScore;
+int counter=0;
+int sum = 0;
+do
+{
+    Console.WriteLine("Enter your student score, if you are done enter -1 to see the average.");
+    studentScore = int.Parse(Console.ReadLine());
+    sum = sum + studentScore;
+    counter++;
+
+} while (studentScore != -1);
+int average = (sum + 1) / (counter-1);
+Console.WriteLine("The average is "+ average);
+
 
 Console.ReadLine();
 
