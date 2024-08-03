@@ -325,7 +325,8 @@ for (int i=0; i<6; i++)
 Console.WriteLine("loop has ended at 5th iteration.");
 */
 // intro to arrays
-int[] numberArray = new int[5];
+int[] numberArray = new int[5]; // declares an array variable of type int. 
+// assignes values to the array
 numberArray[0] = 7;
 numberArray[1] = 8;
 numberArray[2] = 9;
