@@ -325,17 +325,11 @@ for (int i=0; i<6; i++)
 Console.WriteLine("loop has ended at 5th iteration.");
 */
 // intro to arrays
-int[] numberArray = new int[5]; // declares an array variable of type int. 
-// assignes values to the array
-numberArray[0] = 7;
-numberArray[1] = 8;
-numberArray[2] = 9;
-numberArray[3] = 10;
-numberArray[4] = 11;
-
+int[] numberArray = [7,8,9,10,11]; // declares an array variable of type int. 
+string[] stringArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]; // declares an array variable of type string. 
 // array position(index): 0 1 2 3  4
 // values assigned:       7 8 9 10 11
-
+Console.WriteLine($"Today is {stringArray[0]}day."); // Outputs the first element inside an array. 
 
 
 Console.ReadLine();
