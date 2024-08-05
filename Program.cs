@@ -331,6 +331,17 @@ string[] stringArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]; // dec
 // values assigned:       7 8 9 10 11
 Console.WriteLine($"Today is {stringArray[0]}day."); // Outputs the first element inside an array. 
 
+// uses for loop to loop through all elements in an array.
+for (int i = 0; i < stringArray.Length; i++)
+{
+    Console.WriteLine(stringArray[i]);
+}
+
+foreach (var day in stringArray)
+{
+    Console.WriteLine(day);
+}
+
 
 Console.ReadLine();
 
