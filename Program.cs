@@ -323,7 +323,7 @@ for (int i=0; i<6; i++)
     Console.WriteLine(i);
 }
 Console.WriteLine("loop has ended at 5th iteration.");
-*/
+
 // intro to arrays
 int[] numberArray = [7,8,9,10,11]; // declares an array variable of type int. 
 string[] stringArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]; // declares an array variable of type string. 
@@ -337,10 +337,27 @@ for (int i = 0; i < stringArray.Length; i++)
     Console.WriteLine(stringArray[i]);
 }
 
+// uses foreach loop to assign each element of an array.  
 foreach (var day in stringArray)
 {
     Console.WriteLine(day);
 }
+*/
+// declares 2D and 3D arrays.
+int[,] array2D = { 
+    { 1, 2, 3 }, 
+    { 4, 5, 6 }, 
+    { 7, 8, 9 } 
+}; // initialises a 2D array.
+Console.WriteLine(array2D[1,1]); // prints an element of a 2D array.
+
+string[,] array2Dindices = {
+    {"0,0", "0,1", "0,2"},
+    {"1,0", "1,1", "1,2"},
+    {"2,0", "2,1", "2,2"} 
+};
+Console.WriteLine(array2Dindices[2,1]);
+
 
 
 Console.ReadLine();
