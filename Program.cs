@@ -387,7 +387,7 @@ foreach (var numberSet in firstJaggedArray)
         Console.WriteLine(number);
     }
 }
-*/
+
 int[,] numbersArray = {
                 {1,2,3},
                 {4,5,6},
@@ -403,6 +403,28 @@ for (int i = 0; i < 3; i++)
                 }
     Console.WriteLine(sum);
 }
+
+// Template for a method
+<access specifier><return type><method name>(parameters list) {
+<method body>
+}
+*/
+// Add method example
+int Add(int num1, int num2)
+{
+    int sum = num1 + num2;
+    return sum; 
+}
+
+// defines a void method.
+void MyFirstMethod()
+{
+    Console.WriteLine("This was called inside my method.");
+    Console.WriteLine("Some very complicated blocks of code.");
+}
+MyFirstMethod();
+Console.WriteLine("This was called outside of method!");
+
 Console.ReadLine();
 
 
