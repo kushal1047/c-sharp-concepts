@@ -371,20 +371,23 @@ string[,,] array3Dindices = {
     }
 };
 Console.WriteLine(array3Dindices[2,1,2]); // prints an element of a 3D array.
+
+int[][] firstJaggedArray = [[1, 2, 3], [4, 5], [6, 7]];
+for (int i = 0; i < firstJaggedArray.Length; i++)
+{
+    for (int j = 0; j < firstJaggedArray[i].Length; j++)
+    {
+        Console.WriteLine(firstJaggedArray[i][j]);
+    }
+}
+foreach (var numberSet in firstJaggedArray)
+{
+    foreach (int number in numberSet)
+    {
+        Console.WriteLine(number);
+    }
+}
 */
-//int[][] firstJaggedArray = [[1,2,3], [4,5], [6,7]];
-//for (int i = 0; i < firstJaggedArray.Length; i++)
-//{
-//    for (int j = 0; j < firstJaggedArray[i].Length; j++) {
-//        Console.WriteLine(firstJaggedArray[i][j]);
-//    }
-//}
-//foreach (var numberSet in firstJaggedArray)
-//{
-//    foreach (int number in numberSet) {
-//        Console.WriteLine(number);
-//    }
-//}
 int[,] numbersArray = {
                 {1,2,3},
                 {4,5,6},
