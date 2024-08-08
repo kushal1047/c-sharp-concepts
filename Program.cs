@@ -408,7 +408,7 @@ for (int i = 0; i < 3; i++)
 <access specifier><return type><method name>(parameters list) {
 <method body>
 }
-*/
+
 // Add method example
 int Add(int num1, int num2)
 {
@@ -424,6 +424,15 @@ void MyFirstMethod()
 }
 MyFirstMethod();
 Console.WriteLine("This was called outside of method!");
+*/
+// defines a method with a parameter
+void WriteSomething(string myArgument)
+{
+    Console.WriteLine("You passed "+myArgument+" as an argument to this method's parameter.");
+}
+WriteSomething("Sam"); // calls the method.
+string myString = "Kushal";
+WriteSomething(myString);
 
 Console.ReadLine();
 
