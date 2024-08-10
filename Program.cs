@@ -408,13 +408,18 @@ for (int i = 0; i < 3; i++)
 <access specifier><return type><method name>(parameters list) {
 <method body>
 }
+*/
 
 // Add method example
 int Add(int num1, int num2)
 {
     int sum = num1 + num2;
-    return sum; 
+    return sum; // returns the calculated result to the method. 
 }
+Console.WriteLine("Please enter a number. I'll add 10 to it!");
+int userInt = int.Parse(Console.ReadLine());
+int result = Add(userInt, 10); // stores the returned value from the method.
+Console.WriteLine($"The final result is {result}.");
 
 // defines a void method.
 void MyFirstMethod()
@@ -424,7 +429,7 @@ void MyFirstMethod()
 }
 MyFirstMethod();
 Console.WriteLine("This was called outside of method!");
-*/
+
 // defines a method with a parameter
 void WriteSomething(string myArgument)
 {
