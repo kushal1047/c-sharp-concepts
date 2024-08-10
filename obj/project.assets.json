@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal Projects\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
-      "projectName": "HelloWorld",
-      "projectPath": "D:\\Personal Projects\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "D:\\Personal Projects\\C#\\c-sharp-concepts\\c-sharp-concepts\\c-sharp-concepts.csproj",
+      "projectName": "c-sharp-concepts",
+      "projectPath": "D:\\Personal Projects\\C#\\c-sharp-concepts\\c-sharp-concepts\\c-sharp-concepts.csproj",
       "packagesPath": "C:\\Users\\kusah\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal Projects\\C#\\HelloWorld\\HelloWorld\\obj\\",
+      "outputPath": "D:\\Personal Projects\\C#\\c-sharp-concepts\\c-sharp-concepts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

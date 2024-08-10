@@ -1,0 +1,15 @@
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\bin\Debug\net8.0\c-sharp-concepts.exe
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\bin\Debug\net8.0\c-sharp-concepts.deps.json
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\bin\Debug\net8.0\c-sharp-concepts.runtimeconfig.json
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\bin\Debug\net8.0\c-sharp-concepts.dll
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\bin\Debug\net8.0\c-sharp-concepts.pdb
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.AssemblyInfoInputs.cache
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.AssemblyInfo.cs
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.csproj.CoreCompileInputs.cache
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.sourcelink.json
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.dll
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\refint\c-sharp-concepts.dll
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.pdb
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\c-sharp-concepts.genruntimeconfig.cache
+D:\Personal Projects\C#\c-sharp-concepts\c-sharp-concepts\obj\Debug\net8.0\ref\c-sharp-concepts.dll
