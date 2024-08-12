@@ -408,7 +408,7 @@ for (int i = 0; i < 3; i++)
 <access specifier><return type><method name>(parameters list) {
 <method body>
 }
-*/
+
 
 // Add method example
 int Add(int num1, int num2)
@@ -438,7 +438,34 @@ void WriteSomething(string myArgument)
 WriteSomething("Sam"); // calls the method.
 string myString = "Kushal";
 WriteSomething(myString);
+*/
+// defines concept of argument promotion
+// implicit conversion from smaller data type to larger data type.
+void myMethod(double number)
+{
+    Console.WriteLine("The double type number is:"+ number);
+}
+int numArg = 12;
+myMethod(numArg);
 
+void CalculateArea(double radius)
+{
+    double area = Math.PI * radius * radius;
+    Console.WriteLine($"The area of this circle is {area}.");
+}
+int circleRadius = 13;
+CalculateArea(circleRadius);
+
+void myMethod1(double number)
+{
+    Console.WriteLine($"Double function is called with {number}.");
+}
+void myMethod2(int num)
+{
+    Console.WriteLine($" int function is called with {num}.");
+}
+myMethod1(10);
+myMethod1(12.7f);
 Console.ReadLine();
 
 
