@@ -438,7 +438,7 @@ void WriteSomething(string myArgument)
 WriteSomething("Sam"); // calls the method.
 string myString = "Kushal";
 WriteSomething(myString);
-*/
+
 // defines concept of argument promotion
 // implicit conversion from smaller data type to larger data type.
 void myMethod(double number)
@@ -466,6 +466,19 @@ void myMethod2(int num)
 }
 myMethod1(10);
 myMethod1(12.7f);
+*/
+
+// uses ref parameter modifier to modify existing data inside the method.
+void modifyValue (ref int number)
+{
+    number += 10;
+}
+int myNumber = 10;
+modifyValue(ref myNumber);
+Console.WriteLine(myNumber);
+
+// uses out parameter to return multiple values
+
 Console.ReadLine();
 
 
