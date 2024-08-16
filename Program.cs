@@ -2,6 +2,7 @@
 // this is another comment line.
 // this line of code will print hello Kushal to the console.
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Metrics;
 using System.Globalization;
 using System.Runtime.CompilerServices;
@@ -478,6 +479,14 @@ modifyValue(ref myNumber);
 Console.WriteLine(myNumber);
 
 // uses out parameter to return multiple values
+void SumAndProduct(int num1, int num2, out int sum, out int product)
+{
+    sum = num1+ num2;
+    product = num1 * num2;
+}
+int number1 = 10, number2 = 3, sum, product;
+SumAndProduct(number1, number2, out sum, out product);
+Console.WriteLine($"Sum is {sum}. Product is {product}");
 
 Console.ReadLine();
 
