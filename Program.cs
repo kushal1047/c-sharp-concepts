@@ -478,7 +478,7 @@ int myNumber = 10;
 modifyValue(ref myNumber);
 Console.WriteLine(myNumber);
 
-// uses out parameter to return multiple values
+// uses out modifier to return multiple values
 void SumAndProduct(int num1, int num2, out int sum, out int product)
 {
     sum = num1+ num2;
@@ -487,6 +487,15 @@ void SumAndProduct(int num1, int num2, out int sum, out int product)
 int number1 = 10, number2 = 3, sum, product;
 SumAndProduct(number1, number2, out sum, out product);
 Console.WriteLine($"Sum is {sum}. Product is {product}");
+
+//uses in modifier to pass read-only variable
+void ReadOnlyValue(in int number)
+{
+    // number += 10; -> causes an error because its read-only.
+    Console.WriteLine(number);
+}
+int userNumber = 10;
+ReadOnlyValue(in userNumber);
 
 Console.ReadLine();
 
