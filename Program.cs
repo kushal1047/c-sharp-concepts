@@ -8,7 +8,7 @@ namespace c_sharp_concepts
             /*
             // this is another comment line.
             // this line of code will print hello Kushal to the console.
-            Console.WriteLine("Hello, Kushal!");
+            Console.WriteLine("Hello, Kushal");
 
             // declaring a variable 
             string myFriendsName;
