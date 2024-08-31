@@ -495,6 +495,8 @@ namespace c_sharp_concepts
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
             */
+            Car bmw = new Car("i7","BMW");
+            Car audi = new Car("a3","Audi");
 
             Console.ReadLine();
 
