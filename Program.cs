@@ -494,12 +494,18 @@ namespace c_sharp_concepts
             }
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
-            */
+            
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
             Console.WriteLine("Please enter your brand name.");
             bmw.Brand = Console.ReadLine();
             Console.WriteLine($"The brand name is {bmw.Brand}");
+            */
+
+            Customer myCustomer = new Customer("Kushal","Brisbane","0466820430");
+            Customer myCustomer2 = new Customer("Sam");
+            Console.WriteLine(myCustomer.Address);
+            Console.WriteLine(myCustomer2.Name);
 
             Console.ReadLine();
 
