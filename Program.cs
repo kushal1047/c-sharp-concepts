@@ -504,8 +504,10 @@ namespace c_sharp_concepts
 
             Customer myCustomer = new Customer("Kushal","Brisbane","0466820430");
             Customer myCustomer2 = new Customer("Sam");
+            Customer myCustomer3 = new Customer();
             Console.WriteLine(myCustomer.Address);
             Console.WriteLine(myCustomer2.Name);
+            Console.WriteLine(myCustomer3.Contact);
 
             Console.ReadLine();
 

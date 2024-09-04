@@ -26,6 +26,11 @@ namespace c_sharp_concepts
         }
 
         // creates default constructor
-
+        public Customer()
+        {
+            Name = "Customer Name";
+            Address = "unknown";
+            Contact = "unknown";
+        }
     }
 }
