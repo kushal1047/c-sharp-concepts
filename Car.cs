@@ -10,9 +10,9 @@ namespace c_sharp_concepts
     internal class Car
 {       
         // creates member variables.
-        private string _model; // private hides the variables from other classes.
-        private string _brand;
-        private bool _isLuxury;
+        private string _brand; // private hides the variables from other classes; creates a backing field for the property Brand.
+        // private string _model; 
+        // private bool _isLuxury;
 
         // creates Property to encapsulate private member variables.
         public string Brand {
@@ -20,7 +20,7 @@ namespace c_sharp_concepts
             // uses getter to get the value in desired format. 
             get
             {
-                if (_isLuxury)
+                if (IsLuxury)
                 {
                     return _brand + "--Luxury Edition";
                 } else 
@@ -40,8 +40,8 @@ namespace c_sharp_concepts
                 }
             } 
         }
-        public string Model { get => _model; set => _model = value; }
-        public bool IsLuxury { get => _isLuxury; set => _isLuxury = value; }
+        public string Model { get; set; }
+        public bool IsLuxury { get; set; }
 
         // creates custom constructor. 
         public Car (string model, string brand, bool isLuxury)
