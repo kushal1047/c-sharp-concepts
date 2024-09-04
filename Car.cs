@@ -52,6 +52,7 @@ namespace c_sharp_concepts
             Console.WriteLine("You just created a new object of class Car with model "+ Model + " and brand " + Brand);
         }
 
+        // creates a method
         public void Drive()
         {
             Console.WriteLine($"I'm {Model} and I'm driving.");

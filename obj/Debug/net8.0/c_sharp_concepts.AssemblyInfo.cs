@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("c_sharp_concepts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f683d4187b34ac72097c05b229474de62aa219e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d3f82bbe79e7f12c88d6ae359f577cf244b730a")]
 [assembly: System.Reflection.AssemblyProductAttribute("c_sharp_concepts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("c_sharp_concepts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -32,5 +32,12 @@ namespace c_sharp_concepts
             Address = "unknown";
             Contact = "unknown";
         }
+
+        // creates a method.
+        public void CreateDetails(string name, string address, string contact) {
+            Name= name;
+            Address= address;
+            Contact = contact;
+        }
     }
 }

@@ -495,14 +495,6 @@ namespace c_sharp_concepts
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
             
-            Customer myCustomer = new Customer("Kushal","Brisbane","0466820430");
-            Customer myCustomer2 = new Customer("Sam");
-            Customer myCustomer3 = new Customer();
-            Console.WriteLine(myCustomer.Address);
-            Console.WriteLine(myCustomer2.Name);
-            Console.WriteLine(myCustomer3.Contact);
-            */
-
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
             Console.WriteLine("Please enter your brand name.");
@@ -510,6 +502,16 @@ namespace c_sharp_concepts
             Console.WriteLine($"The brand name is {bmw.Brand}");
             bmw.Drive();
             audi.Drive();
+            */
+            Customer myCustomer = new Customer("Kushal", "Brisbane", "0466820430");
+            Customer myCustomer2 = new Customer("Sam");
+            Customer myCustomer3 = new Customer();
+            Console.WriteLine(myCustomer.Address);
+            Console.WriteLine(myCustomer2.Name);
+            Console.WriteLine(myCustomer3.Contact);
+            myCustomer3.CreateDetails("Jeewan", "Biratnagar", "9862194726");
+            Console.WriteLine(myCustomer3.Contact);
+
 
 
             Console.ReadLine();
