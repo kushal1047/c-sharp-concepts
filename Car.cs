@@ -53,10 +53,8 @@ namespace c_sharp_concepts
         }
 
         // creates a method
-        public void Drive()
-        {
-            Console.WriteLine($"I'm {Model} and I'm driving.");
-        }
+        public void Drive() => Console.WriteLine($"I'm {Model} and I'm driving."); // uses expression bodied member (=> , no {} ) for less code, more clarity.
+
 
         
     }

@@ -20,10 +20,7 @@ namespace c_sharp_concepts
             Contact = contact;
         }
 
-        public Customer(string name)
-        {
-            Name = name;
-        }
+        public Customer(string name) => Name = name;
 
         // creates default constructor
         public Customer()
