@@ -12,6 +12,22 @@ namespace c_sharp_concepts
         public string Address { get; set; }
         public string Contact { get; set; }
 
+        // creates an inner class Location 
+        public class Location
+        {
+            private Customer CustomerOuter;
+
+            public Location(Customer customerOuter)
+            {
+                CustomerOuter = customerOuter;
+            }
+            public void DisplayCustomerAddress()
+            {
+                Console.WriteLine(CustomerOuter.Address);
+            }
+            
+        }
+
         // creates custom constructor
         public Customer(string name, string address, string contact)
         {
