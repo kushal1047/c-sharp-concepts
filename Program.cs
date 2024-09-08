@@ -513,8 +513,8 @@ namespace c_sharp_concepts
             Console.WriteLine(myCustomer3.Contact);
             Customer.Location myInnerLocation = new Customer.Location(myCustomer); // creates an instance of inner class Location.
             myInnerLocation.DisplayCustomerAddress();
-
-
+            myCustomer.CarBrand = "Mercedes";
+            Console.WriteLine(myCustomer.CarBrand);
 
             Console.ReadLine();
 

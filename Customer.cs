@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp_concepts
 {
-    internal class Customer
+    internal partial class Customer // declares partial class Customer
     {
         public string Name { get; set; }
         public string Address { get; set; }
@@ -34,6 +34,7 @@ namespace c_sharp_concepts
             Name = name;
             Address = address;
             Contact = contact;
+            TestPartialMethod(); // calls partial method.
         }
 
         public Customer(string name) => Name = name;
@@ -52,5 +53,6 @@ namespace c_sharp_concepts
             Address= address;
             Contact = contact;
         }
+        partial void TestPartialMethod(); // declares partial method with optional implementation. 
     }
 }
