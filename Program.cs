@@ -503,7 +503,7 @@ namespace c_sharp_concepts
             bmw.Drive();
             audi.Drive();
             */
-            Customer myCustomer = new Customer("Kushal", "Brisbane", "0466820430");
+            Customer myCustomer = new Customer(name: "Kushal", address: "Brisbane", contact: "0466820430"); // uses named parameter instead of raw data. 
             Customer myCustomer2 = new Customer("Sam");
             Customer myCustomer3 = new Customer();
             Console.WriteLine(myCustomer.Address);
