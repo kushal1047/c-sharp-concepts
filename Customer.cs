@@ -52,5 +52,11 @@ namespace c_sharp_concepts
             Contact = contact;
         }
         partial void TestPartialMethod(); // declares partial method with optional implementation. 
+
+        // creates an overloading operator +
+        public static Customer operator +( Customer male, Customer female) 
+        {
+            return new Customer(male.Name + " weds " + female.Name);
+        }
     }
 }

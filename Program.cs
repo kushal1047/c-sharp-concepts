@@ -504,7 +504,7 @@ namespace c_sharp_concepts
             audi.Drive();
             */
             Customer myCustomer = new Customer(name: "Kushal", address: "Brisbane", contact: "0466820430"); // uses named parameter instead of raw data. 
-            Customer myCustomer2 = new Customer("Sam");
+            Customer myCustomer2 = new Customer("Jenny");
             Customer myCustomer3 = new Customer();
             Console.WriteLine(myCustomer.Address);
             Console.WriteLine(myCustomer2.Address);
@@ -515,6 +515,8 @@ namespace c_sharp_concepts
             myInnerLocation.DisplayCustomerAddress();
             myCustomer.CarBrand = "Mercedes";
             Console.WriteLine(myCustomer.CarBrand);
+            Customer couple = myCustomer + myCustomer2;
+            Console.WriteLine(couple.Name);
 
             Console.ReadLine();
 
