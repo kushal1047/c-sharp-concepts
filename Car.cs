@@ -43,6 +43,11 @@ namespace c_sharp_concepts
         public string Model { get; set; }
         public bool IsLuxury { get; set; }
 
+        // creates computed property BrandModel that is read-only and only has getter.
+        public string BrandModel { get {
+                return Model + " " + Brand;
+            } }
+
         // creates custom constructor. 
         public Car (string model, string brand, bool isLuxury)
         {

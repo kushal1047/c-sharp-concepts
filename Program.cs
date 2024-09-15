@@ -494,15 +494,15 @@ namespace c_sharp_concepts
             }
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
-            
+            */
+
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
             Console.WriteLine("Please enter your brand name.");
             bmw.Brand = Console.ReadLine();
-            Console.WriteLine($"The brand name is {bmw.Brand}");
+            Console.WriteLine($"The brand and model name is {bmw.BrandModel}");
             bmw.Drive();
             audi.Drive();
-            */
             Customer myCustomer = new Customer(name: "Kushal", address: "Brisbane", contact: "0466820430"); // uses named parameter instead of raw data. 
             Customer myCustomer2 = new Customer("Jenny");
             Customer myCustomer3 = new Customer();
