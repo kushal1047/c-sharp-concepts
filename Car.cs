@@ -43,6 +43,9 @@ namespace c_sharp_concepts
         public string Model { get; set; }
         public bool IsLuxury { get; set; }
 
+        // creates a public static variable.
+        public static int NumberOfCars { get; set; }
+
         // creates computed property BrandModel that is read-only and only has getter.
         public string BrandModel { get {
                 return Model + " " + Brand;
@@ -51,10 +54,15 @@ namespace c_sharp_concepts
         // creates custom constructor. 
         public Car (string model, string brand, bool isLuxury)
         {
+            NumberOfCars++;
             Model = model;
             Brand = brand;
             IsLuxury = isLuxury;
             Console.WriteLine("You just created a new object of class Car with model "+ Model + " and brand " + Brand);
+        }
+        public Car()
+        {
+            NumberOfCars++;
         }
 
         // creates a method

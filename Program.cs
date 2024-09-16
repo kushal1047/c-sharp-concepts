@@ -517,6 +517,7 @@ namespace c_sharp_concepts
             Console.WriteLine(myCustomer.CarBrand);
             Customer couple = myCustomer + myCustomer2;
             Console.WriteLine(couple.Name);
+            Console.WriteLine("Total number of cars created is: " + Car.NumberOfCars); // accesses the value of a public static variable from class Car.
 
             Console.ReadLine();
 
