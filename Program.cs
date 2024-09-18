@@ -537,7 +537,7 @@ namespace c_sharp_concepts
             Console.WriteLine(couple.Name);
             myCustomer.ViewDetails();
             myCustomer3.ViewDetails();
-
+            myCustomer.Password = "125asdhasiudh^%&^%"; // assings value to the Password property.
             Console.ReadLine();
             
 

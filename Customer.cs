@@ -9,12 +9,21 @@ namespace c_sharp_concepts
     internal partial class Customer // declares partial class Customer
     {
         private readonly int _id; // creates a private readonly id variable to assign unique secured id to each customer.
-        private static int nextId = 0; // creates a variable to increment value and get assigned to id. 
-        public string Name { get; set; }
+        private static int nextId = 0; // creates a variable to increment value and get assigned to id.
+        private string _password; // creates a password member to store customer password.
+
+    
+        public int Id { get { return _id; } }
+
+        // creates a Password property and make it write-only.
+        public string Password { set { 
+             _password = value;
+            } }
+        public string Name { get; set; } 
         public string Address { get; set; }
         public string Contact { get; set; }
 
-        // creates an inner class Location 
+        // creates an inner class Location.
         public class Location
         {
             private Customer CustomerOuter;
