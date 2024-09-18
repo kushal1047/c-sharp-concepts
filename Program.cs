@@ -500,11 +500,13 @@ namespace c_sharp_concepts
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
             Car porsche = new LuxuryCar();
+
+            // uses is operator to check object type.
             if (porsche is LuxuryCar)
             {
                 Console.WriteLine("porsche is of class Luxury Car");
             }
-            LuxuryCar myPorsche = porsche as LuxuryCar;
+            LuxuryCar myPorsche = porsche as LuxuryCar; // casts object type using as operator.
             if (myPorsche != null)
             {
                 Console.WriteLine("Cast successful!");
@@ -517,6 +519,8 @@ namespace c_sharp_concepts
             Console.WriteLine($"The brand and model name is {bmw.BrandModel}");
             bmw.Drive();
             audi.Drive();
+            Console.WriteLine("Total number of cars created is: " + Car.NumberOfCars); // accesses the value of a public static variable from class Car.
+
             Customer myCustomer = new Customer(name: "Kushal", address: "Brisbane", contact: "0466820430"); // uses named parameter instead of raw data. 
             Customer myCustomer2 = new Customer("Jenny");
             Customer myCustomer3 = new Customer();
@@ -531,7 +535,8 @@ namespace c_sharp_concepts
             Console.WriteLine(myCustomer.CarBrand);
             Customer couple = myCustomer + myCustomer2;
             Console.WriteLine(couple.Name);
-            Console.WriteLine("Total number of cars created is: " + Car.NumberOfCars); // accesses the value of a public static variable from class Car.
+            myCustomer.ViewDetails();
+            myCustomer3.ViewDetails();
 
             Console.ReadLine();
             

@@ -64,7 +64,6 @@ namespace c_sharp_concepts
         {
             NumberOfCars++;
         }
-
         // creates a method
         public void Drive() => Console.WriteLine($"I'm {Model} and I'm driving."); // uses expression bodied member (=> , no {} ) for less code, more clarity.
 
