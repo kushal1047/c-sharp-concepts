@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 namespace c_sharp_concepts
 {
     internal class Program
@@ -494,11 +495,24 @@ namespace c_sharp_concepts
             }
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
-            */
-
+            
+            */ 
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
-            Console.WriteLine("Please enter your brand name.");
+            Car porsche = new LuxuryCar();
+            if (porsche is LuxuryCar)
+            {
+                Console.WriteLine("porsche is of class Luxury Car");
+            }
+            LuxuryCar myPorsche = porsche as LuxuryCar;
+            if (myPorsche != null)
+            {
+                Console.WriteLine("Cast successful!");
+            }
+            else {
+                Console.WriteLine("Cast failed!");
+            }
+                Console.WriteLine("Please enter your brand name.");
             bmw.Brand = Console.ReadLine();
             Console.WriteLine($"The brand and model name is {bmw.BrandModel}");
             bmw.Drive();
@@ -520,10 +534,13 @@ namespace c_sharp_concepts
             Console.WriteLine("Total number of cars created is: " + Car.NumberOfCars); // accesses the value of a public static variable from class Car.
 
             Console.ReadLine();
+            
 
+            // uses 'is' and 'as' operator
+            
 
-        }
     }
+}
 }
 
 
