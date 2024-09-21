@@ -11,6 +11,7 @@ namespace c_sharp_concepts
         private readonly int _id; // creates a private readonly id variable to assign unique secured id to each customer.
         private static int nextId = 0; // creates a variable to increment value and get assigned to id.
         private string _password; // creates a password member to store customer password.
+        public const string Country = "Australia"; // creates a constant which has the same value for all customers. 
 
     
         public int Id { get { return _id; } }
@@ -68,7 +69,7 @@ namespace c_sharp_concepts
         // creates a method to view name and id of a customer.
         public void ViewDetails()
         {
-            Console.WriteLine($"Details of customer -> Name: {Name}, id: {_id}");
+            Console.WriteLine($"Details of customer -> Name: {Name}, id: {_id}, Country: {Country}");
         }
         partial void TestPartialMethod(); // declares partial method with optional implementation. 
 
