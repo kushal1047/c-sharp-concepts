@@ -496,7 +496,7 @@ namespace c_sharp_concepts
             int userNumber = 10;
             ReadOnlyValue(in userNumber);
             
-            */ 
+             
             Car bmw = new Car("i7","BMW", false);
             Car audi = new Car("a3","Audi", true);
             Car porsche = new LuxuryCar();
@@ -538,14 +538,23 @@ namespace c_sharp_concepts
             myCustomer.ViewDetails();
             myCustomer3.ViewDetails();
             myCustomer.Password = "125asdhasiudh^%&^%"; // assings value to the Password property.
+            */
+
+            List<string> colors = new List<string>();
+            colors.Add("red");
+            colors.Add("green");
+            colors.Add("Blue");
+            Console.WriteLine("The colors in the list are:");
+            foreach (string color in colors)
+            {
+                Console.WriteLine(color);
+            }
+
             Console.ReadLine();
             
 
-            // uses 'is' and 'as' operator
-            
-
+        }
     }
-}
 }
 
 
