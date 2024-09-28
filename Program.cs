@@ -543,13 +543,25 @@ namespace c_sharp_concepts
             List<string> colors = new List<string>();
             colors.Add("red");
             colors.Add("green");
-            colors.Add("Blue");
+            colors.Add("blue");
+            colors.Add("red");
             Console.WriteLine("The colors in the list are:");
             foreach (string color in colors)
             {
                 Console.WriteLine(color);
             }
-
+            bool isDeleted = colors.Remove("red");
+            foreach (string color in colors)
+            {
+                Console.WriteLine(color);
+            }
+            while (isDeleted) {
+               isDeleted = colors.Remove("red");
+            }
+            foreach (string color in colors)
+            {
+                Console.WriteLine(color);
+            }
             Console.ReadLine();
             
 
