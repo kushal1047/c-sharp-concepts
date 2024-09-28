@@ -540,17 +540,14 @@ namespace c_sharp_concepts
             myCustomer.Password = "125asdhasiudh^%&^%"; // assings value to the Password property.
             */
 
-            List<string> colors = new List<string>();
-            colors.Add("red");
-            colors.Add("green");
-            colors.Add("blue");
-            colors.Add("red");
+            List<string> colors = ["red", "green", "blue", "red"]; // initializes a list.
+            colors.Add("purple"); // adds a new element to the list.
             Console.WriteLine("The colors in the list are:");
-            foreach (string color in colors)
+            foreach (string color in colors) // loops through each element on a list.
             {
                 Console.WriteLine(color);
             }
-            bool isDeleted = colors.Remove("red");
+            bool isDeleted = colors.Remove("red"); // removes a specific element from a list. 
             foreach (string color in colors)
             {
                 Console.WriteLine(color);
