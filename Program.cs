@@ -559,6 +559,18 @@ namespace c_sharp_concepts
             {
                 Console.WriteLine(color);
             }
+
+            List<int> numbers = [9,7,45,32,1];
+            Console.WriteLine("\nUnsorted List:");
+            foreach (int number in numbers) {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine("\nSorted List:");
+            numbers.Sort(); // sorts the elements in the list.
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
             Console.ReadLine();
             
 
