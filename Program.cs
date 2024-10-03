@@ -571,6 +571,11 @@ namespace c_sharp_concepts
             {
                 Console.WriteLine(number);
             }
+            List<int> filteredList = numbers.FindAll(x => x>10); // creates a new list with numbers greater then 10.
+            Console.WriteLine("\nList of numbers greater than 10:");
+            foreach (int number in filteredList) {
+                Console.WriteLine(number);
+            }
             Console.ReadLine();
             
 
