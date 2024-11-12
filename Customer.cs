@@ -29,15 +29,13 @@ namespace c_sharp_concepts
         }
 
         // creates custom constructor
-        public Customer(string name, string address, string contact)
+        public Customer(string name, string address = "NA", string contact = "NA") // uses optional parameter or default parameters.
         {
             Name = name;
             Address = address;
             Contact = contact;
             TestPartialMethod(); // calls partial method.
         }
-
-        public Customer(string name) => Name = name;
 
         // creates default constructor
         public Customer()

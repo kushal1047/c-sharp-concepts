@@ -507,7 +507,7 @@ namespace c_sharp_concepts
             Customer myCustomer2 = new Customer("Sam");
             Customer myCustomer3 = new Customer();
             Console.WriteLine(myCustomer.Address);
-            Console.WriteLine(myCustomer2.Name);
+            Console.WriteLine(myCustomer2.Address);
             Console.WriteLine(myCustomer3.Contact);
             myCustomer3.CreateDetails("Jeewan", "Biratnagar", "9862194726");
             Console.WriteLine(myCustomer3.Contact);
